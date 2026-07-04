@@ -52,9 +52,9 @@
 
 ## المخرجات
 
-- Dataset نظيف: `data/processed/autism_adult_cleaned.csv`
+- Dataset نظيف: يتم توليده محلياً عند تشغيل السكربت، ولا يُنشر في النسخة العامة.
 - مقاييس النماذج: `reports/tables/model_performance.csv`
 - مصفوفة الالتباس: `reports/tables/confusion_matrix.csv`
 - أهمية الخصائص: `reports/tables/feature_importance.csv`
 - تنبؤات عينة: `reports/tables/sample_predictions.csv`
-- النموذج المحفوظ: `models/best_autism_screening_model.joblib`
+- النموذج المحفوظ: يتم توليده محلياً عند تشغيل السكربت، ولا يُنشر في النسخة العامة.

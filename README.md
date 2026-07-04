@@ -80,19 +80,11 @@ The aggregate `result` score was excluded from training to reduce direct leakage
 ## Project Files
 
 ```text
-data/
-  raw/                         # Original UCI ARFF file
-  processed/                   # Cleaned dataset
-
 reports/
-  figures/                     # Generated visualizations
-  tables/                      # Metrics, predictions, feature importance
+  figures/                     # Client-facing visual outputs
+  tables/                      # Metrics, sample predictions, feature importance
   executive_report_ar.md       # Arabic executive report
   project_summary.json
-
-models/
-  best_autism_screening_model.joblib
-  model_metadata.json
 
 scripts/
   build_autism_screening_analysis.py
@@ -102,6 +94,8 @@ data_sources.md
 MODEL_USAGE.md
 requirements.txt
 ```
+
+The `data/raw`, `data/processed`, and `models` folders are generated locally when the pipeline is run. They are intentionally excluded from this public repository.
 
 ## How to Run
 
@@ -135,10 +129,10 @@ python scripts/predict_autism_screening.py
 
 ## Deliverables
 
-- Cleaned autism screening dataset
+- Cleaned autism screening dataset generated locally when the pipeline is run
 - Exploratory analysis charts
 - Classification model comparison
-- Saved best model
+- Saved best model generated locally, not published in the public repository
 - Sample prediction output
 - Feature importance report
 - Confusion matrix and model metrics

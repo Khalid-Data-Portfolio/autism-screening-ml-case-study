@@ -6,7 +6,7 @@
 python scripts/build_autism_screening_analysis.py
 ```
 
-This command regenerates:
+This command regenerates local working artifacts that are intentionally not committed to the public repository:
 
 - Cleaned dataset
 - EDA charts
@@ -14,7 +14,7 @@ This command regenerates:
 - Confusion matrix
 - Feature importance
 - Sample predictions
-- Saved model artifact
+- Saved model artifact in the local `models/` folder
 - Arabic executive report
 
 ## Run a Sample Prediction
@@ -23,7 +23,7 @@ This command regenerates:
 python scripts/predict_autism_screening.py
 ```
 
-The trained model is saved at:
+After running the training pipeline locally, the trained model is saved at:
 
 ```text
 models/best_autism_screening_model.joblib
@@ -41,3 +41,8 @@ country_of_residence, used_app_before, relation
 ## Medical Disclaimer
 
 The output is a machine learning screening estimate only. It is not a medical diagnosis, clinical decision tool, or substitute for assessment by qualified professionals.
+
+
+## Public Repository Boundary
+
+The public repository does not ship the raw dataset, cleaned dataset, or trained model file. These artifacts are recreated locally by running the build script.
