@@ -1,0 +1,10 @@
+{
+  "records": 680,
+  "features_used": 18,
+  "asd_records": 182,
+  "no_asd_records": 498,
+  "asd_rate": 0.2676,
+  "best_model": "Logistic Regression",
+  "best_test_roc_auc": 1.0,
+  "best_test_f1": 1.0
+}
